@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<html>
+<head>
+<meta charset="utf-8">
+<title>Najpiękiniejsze i najlepsze miejsca w Przemyślu</title>
+<link rel="stylesheet" href="style.css" type="text/css" />    
+     
+<style>
+        h1
+        {
+            color: blue;
+        }
+</style>
+</head>
+  	
+<body>
+
+    <div id="zegar"></div>
+ 
+    <script type="text/javascript">
+ 
+    function czas() {
+        var data = new Date(); 
+        var godzina = data.getHours(); 
+        var minuta = data.getMinutes(); 
+        var sekunda = data.getSeconds(); 
+ 
+        // przypisanie zera do godziny, minuty i sekundy, czyli np. 05 a nie 5
+        if (godzina < 10) {
+            godzina = "0" + godzina;
+        }
+        if (minuta < 10) {
+            minuta = "0" + minuta;
+        }
+        if (sekunda < 10) {
+            sekunda = "0" + sekunda;
+        }
+
+        document.querySelector("#zegar").innerHTML = "Obecna godzina: " + godzina + " : " + minuta + " : " + sekunda;
+ 
+        setTimeout(czas, 1000); 
+    }
+    window.addEventListener("load", czas); 
+    </script></br>
+
+<span style="color: lime; font-size: xx-large">Witam Cię mój gościu na mojej stronie internetowej<p></p></span>
+<p>W dalszym ciągu dokładnie poniżej znajduje się moja lista dostępne 10 najpiękniejszych i najlepszych miejsc w Przemyślu.</p>
+<p>Z każdej ze stron znajduje sie krótki ale treściwy opis owego miejsca i opinie.</p>
+<p>Aby przejść do danego serialu wystarczy kliknąć w jego tytuł.</p>
+<a href="miejsce1.html">1. Przemyskie Podziemia</a></br>
+<a href="miejsce2.html">2. Dawny Klasztor Dominikanek</a></br>
+<a href="miejsce3.html">3. Most kolejowy</a></br>
+<a href="miejsce4.html">4. Cmentarz główny</a></br>
+<a href="miejsce5.html">5. Muzeum Dzwonów i Fajek </a></br>
+<a href="miejsce6.html">6. Zamek Kazimierzowski</a></br>
+<a href="miejsce7.html">7. Muzeum Twierdzy Przemyśl</a></br>
+<a href="miejsce8.html">8. Kamienice w Rynku</a></br>
+<a href="miejsce9.html">9. Budynek dworca PKP</a></br>
+<a href="miejsce10.html">10. Zniesienie i Kopiec Tatarski</a></br></br>
+<i><a href="mailto:michal_blat@o2.pl">Masz dodatkowe pytania, a może jakieś swoje polecane miejsca? KLIKNIJ KLIKNIJ i napisz do mnie a napewno się znajdą na tej liście</a></br></i>
+<a href='http://www.counterliczniki.com'>licznik odwiedzin</a>
+
+<script type="text/javascript">if(typeof(window["s4uid"]) == "undefined"){ var s4uid = new Array(); var s4u_paramsarr = new Array(); var s4u_sp = new Array(); var s4uc = 0; var acts4uc = 0; var dAsd = new Array(); var temp1 = 0;}(function() {s4uid[s4uc] = "2200879";s4u_paramsarr[s4uc] = new Array();s4u_paramsarr[s4uc]["s4ustyleid"] = "48&p=b4";s4u_sp[s4uc] = new Array();document.write("<span id=s4u_cp" + s4uc + "></span>");var s4u = document.createElement("script"); s4u.type = "text/javascript"; s4u.async = true;s4u.src = ("https:" == document.location.protocol ? "https://www" : "http://www") + ".stats4u.net/s4u.js";var x = document.getElementsByTagName("script")[0];x.parentNode.insertBefore(s4u, x);s4uc++;})();</script><noscript><a href="https://www.stats4u.net" target="_blank"><img src="https://www.stats4u.net/index.php?action=pic&s4uid=2200879&s4ustyleid=48&p=b4&js=0" border="0" alt="Stats4U - Liczniki, statystyki na żywo i nie tylko!" style="vertical-align:bottom" title="Stats4U - Liczniki, statystyki na żywo i nie tylko!"></a></noscript>
+
+
+<footer>
+  <nav class="right">
+    <ul>
+      <li><a href="#">Strona główna</a></li>    
+      <li><a href="https://http://visit.przemysl.pl/">Inne miejsca</a></li>
+      <li><a href="mailto:michal_blat@o2.pl">Kontakt</a></li></br>
+  <p class="left">Dziękuję za wizytę i zapraszam ponownie
+  </p>
+    </ul>
+  </nav>
+</footer>
+</body>
+</html>
